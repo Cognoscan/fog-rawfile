@@ -1,3 +1,9 @@
+//! Handles conversion of raw byte streams (including files) into 
+//! [`fog-pack`](https://crates.io/crates/fog-pack) documents, and provides an 
+//! interface for reading & seeking within the encoded byte stream.
+//! 
+//! Currently only encoding is supported.
+//!
 #![allow(dead_code)] // TODO: Remove when the API is complete
 
 use std::{io::{Read, BufReader, self}, path::Path, fs::File};
